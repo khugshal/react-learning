@@ -1,26 +1,21 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 
-const div = React.createElement("div", {id: "parent"}, 
-    [React.createElement("div", {id: "child1"},
-        [
-            React.createElement("h1",{id: "child1H1"}, "H1 of child1"),
-            React.createElement("h2",{id: "child2H1"}, "H2 of child1"),
-        ]
-    ),
-        React.createElement("div", {id: "child2"},
-            [
-                React.createElement("h1",{id: "child2H1"}, "H1 of child2"),
-                React.createElement("h2",{id: "child2H1"}, "H2 of child2"),
-            ]
-    )   
+const Title = () => <h1>Welcome to react component</h1>
+const Heading = () => {
+    return (
+        <div id="container">
+            <h1 style={{color: "blue"}}>Call title with JSX</h1>
+            <Title />  
+            <h1 style={{color: "red"}}>Call title as nornam JS function</h1>
+            {Title()} 
+            <h1>This is an example of Component Composition</h1>
+        </div>
+    )
+}
 
-    ]);
-
-
-console.log(document.getElementById("root").innerText);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 
 
-root.render(div);
+root.render(<Heading />);
