@@ -1,4 +1,4 @@
-import { data } from "../../data/dummy-data"
+import { data } from "../utils/dummy-data"
 import CardComponent from "./restaurant-component/CardComponent";
 
 const Body = () => {
