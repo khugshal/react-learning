@@ -1,6 +1,40 @@
 # Learning react 🚀
 
 
+# Food Delivery Application  
+Our App will have 3 main components, these will be divided into subcomponents
+
+
+- Header
+    | 
+    |--logo-container
+    |         |
+    |         |-- logo
+    |
+    |--navigation-component
+    |         |
+    |         |--Home
+    |         |--About Us
+    |         |--Contact Us
+    |         |--Cart
+
+- Body
+    | 
+    |--search-component
+    |         |
+    |         |-- search-input
+    |         |-- search-button
+    |
+    |--card-component
+    |         |
+    |         |--Name (Restaurant Name)
+    |         |--Cuisine
+    |         |--Rating
+
+- Footer
+    
+
+
 # Parcel
  - Provides Dev builds
  - Provides local server
